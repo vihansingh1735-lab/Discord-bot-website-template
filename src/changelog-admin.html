@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Changelog Admin</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<main class="container">
+
+  <h1>🔐 Changelog Admin</h1>
+
+  <div id="login">
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="editor" style="display:none;">
+    <input id="version" placeholder="Version (e.g. v1.3.1)">
+    <textarea id="content" placeholder="• Added feature\n• Fixed bug"></textarea>
+    <button onclick="addChangelog()">Add Update</button>
+  </div>
+
+</main>
+
+<script src="js/changelog.js"></script>
+</body>
+</html>
